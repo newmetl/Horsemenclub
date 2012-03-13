@@ -9,6 +9,10 @@ gem 'sqlite3'
 
 gem 'json'
 
+# deployment
+gem 'capistrano',               '2.5.18'
+gem 'capistrano-ext'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
