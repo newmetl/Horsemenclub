@@ -3,7 +3,7 @@ require 'bundler/capistrano'
 set :application, "Horsemenclub"
 set :domain,      "horsemenclub.com"
 set :user,        "hmc"
-set :repository,  "git@github.com/newmetl:Horsemenclub.git"
+set :repository,  "git@github.com:newmetl/Horsemenclub.git"
 
 set :rails_env,   "production"
 
@@ -14,7 +14,7 @@ set :use_sudo,    false
 
 ssh_options[:forward_agent] = true
 set :scm, :git
-set :deploy_via, :copy
+set :deploy_via, :remote_cache
 set :git_enable_submodules, 1
 
 role :app, domain
